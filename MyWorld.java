@@ -14,8 +14,10 @@ import com.engfoot.serial.EngduinoInterface;
  */
 public class MyWorld extends World
 {
-    public Flower flower;
-    public Serial serial;
+    public Teddy teddy;
+    private Serial serial;
+    private Bomb bomb;
+    private Rock rock;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -32,12 +34,26 @@ public class MyWorld extends World
      */
     private void prepare() {
         serial = new Serial();
-        addObject(serial,591,13);
+        addObject(serial,599,1);
         
-        flower = new Flower();
-        addObject(flower,263,211);
+        teddy = new Teddy();
+        addObject(teddy,263,211);
     }
     
+    /**
+     * checks the spaceLevel and increases difficulty.
+     */
+    public void act()
+    {
+        if (Greenfoot.getRandomNumber(200) < 4) {
+            Rock rock = new Rock();
+            addObject(rock, 899, 490);
+        }
+        if (Greenfoot.getRandomNumber(200) < 2) {
+            Bomb bomb = new Bomb();
+            addObject(bomb, 899, 490);
+        }
+    }
     public EngduinoInterface getEngduino() {
         return serial.getEngduino();
     }

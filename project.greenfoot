@@ -1,11 +1,13 @@
 #Greenfoot properties
-#Fri Mar 10 09:59:16 GMT 2017
+#Fri Mar 10 10:25:47 GMT 2017
 readme.name=@README
 target2.name=Flower
 simulation.speed=50
+class.Bomb.superclass=greenfoot.Actor
 dependency1.from=MyWorld
 target2.showInterface=false
 dependency5.to=Serial
+class.Bomb.image=bomb.png
 dependency3.from=Serial
 target3.y=10
 dependency5.from=Flower
@@ -48,6 +50,8 @@ target1.width=80
 mainWindow.x=429
 dependency4.from=MyWorld
 target3.width=90
+class.Rock.image=rock.png
+class.Rock.superclass=greenfoot.Actor
 editor.fx.0.y=0
 dependency4.to=Serial
 class.Serial.superclass=greenfoot.Actor
