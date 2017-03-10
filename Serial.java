@@ -1,11 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import com.engfoot.Engfoot;
-import com.engfoot.serial.EngduinoInterface;
-import com.engfoot.serial.ConnectionException;
 
-import com.engfoot.handler.Value;
-import com.engfoot.handler.ValueChangeHandler;
-import com.engfoot.serial.SerialException;
+import com.engfoot.*;
+import com.engfoot.serial.*;
+import com.engfoot.handler.*;
 
 
 /**
