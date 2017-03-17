@@ -16,7 +16,6 @@ public class MyWorld extends World
 {
     public Teddy teddy;
     private Serial serial;
-    private Bomb bomb;
     private Rock rock;
     /**
      * Constructor for objects of class MyWorld.
@@ -48,10 +47,6 @@ public class MyWorld extends World
         if (Greenfoot.getRandomNumber(200) < 4) {
             Rock rock = new Rock();
             addObject(rock, 899, 490);
-        }
-        if (Greenfoot.getRandomNumber(200) < 2) {
-            Bomb bomb = new Bomb();
-            addObject(bomb, 899, 490);
         }
     }
     public EngduinoInterface getEngduino() {

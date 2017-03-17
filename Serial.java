@@ -20,7 +20,7 @@ public class Serial extends Actor
         
         try {
             foot = engfoot.connect();
-            
+            System.out.println("Connected");
             foot.addAccelerometerHandler(new ValueChangeHandler<Double>() {
 
                 @Override
